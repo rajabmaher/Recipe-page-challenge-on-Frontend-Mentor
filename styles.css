@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color:  hsl(30, 54%, 90%);
+}
+.thepage {
+    max-width: 800px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    border-radius: 20px;
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+.Recipe > img {
+    border-radius: 20px;
+    width: 100%;
+}
+.Recipe > .About {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.Recipe > .About > h1 {
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: hsl(24, 5%, 18%);
+    font-size: 40px;
+}
+.Recipe > .About > p {
+    margin-top: 20px;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;  
+    font-style: normal;
+    font-size: 16px;
+    color: hsl(0, 1%, 29%);
+}
+.Recipe > .Time {
+    padding: 30px;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;  
+    font-style: normal;
+    background-color: hsl(330, 100%, 98%);
+    border-radius: 15px;
+    margin-bottom: 30px;
+}
+.Recipe > .Time > h4 {
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;  
+    font-style: normal;
+    color: hsl(332, 51%, 32%);
+}
+.Recipe > .Time > ul {
+    list-style-position: inside;
+    margin-left: 3px;
+}
+.Recipe > .Time > ul > li::marker {
+    color: hsl(332, 51%, 32%);
+}
+.Recipe > .Time > ul > li {
+    margin-bottom: 12px;
+    font-weight: 400;
+    color: hsl(0, 1%, 29%);
+}
+.Recipe > .Time > ul > li > strong {
+    margin-left: 10px;
+    color: hsl(0, 1%, 29%);
+    margin-right: 5px;
+}
+
+.Ingredients {
+    margin-bottom: 30px;
+}
+.Instructions , .Nutrition {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.Ingredients > h2 , .Instructions > h2 , .Nutrition > h2{
+    color: hsl(14, 45%, 36%);
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 20px;
+}
+.Ingredients > ul {
+    list-style-position: inside;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: "Outfit", sans-serif;
+}
+.Ingredients > ul > li::marker {
+    color: hsl(14, 45%, 36%);
+}
+.Ingredients > ul > li {
+    font-weight: 400;
+    color: hsl(0, 1%, 29%);
+}
+
+.List {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+}
+.ListRow {
+    display: flex;
+}
+.ListRow > .Num {
+    width: 33px;
+    color: hsl(14, 45%, 36%);
+    font-weight: 600;
+}
+.ListRow > .Info {
+    flex: 1;
+    color: hsl(0, 1%, 29%);
+}
+.ListRow > .Info > strong {
+    margin-right: 5px; 
+    font-weight: 600;
+    color: hsl(0, 1%, 29%);
+}
+
+.Nutrition > h2 {
+    margin-bottom: 10px;
+}
+.Nutrition > p {
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: hsl(0, 1%, 29%);
+    margin-bottom: 10px;
+}
+
+.Row {
+    display: flex;
+    align-items: center;
+}
+.One , .Two , .Three {
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+.Row > .left {
+    flex: 1;
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+    color: hsl(0, 1%, 29%);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+}
+.Row > .right {
+    flex: 1;
+    font-family: "Outfit", sans-serif;
+    font-weight: 600;
+    color: hsl(14, 47%, 31%);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+}
+hr {
+    border: 2px solid hsl(30, 18%, 87%);
+    width: 100%;
+}
+
+@media only screen and (max-width: 500px) {
+    .thepage {
+        max-width: 800px;
+        margin-top: 0;
+        margin-bottom: 0;
+        border-radius: 0;
+        padding: 0;
+        background-color: hsl(0, 0%, 100%);
+    }
+    .Recipe > img {
+        border-radius: 0;
+    }
+    .Recipe > .About , .Recipe > .Time, .Ingredients, .Instructions, .Nutrition {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+}
+.attribution { 
+    font-size: 13px; 
+    text-align: center; 
+}
+.attribution a { color: hsl(332, 51%, 32%); }
